@@ -21,15 +21,14 @@ Once you have this sorted, your container would be running on localhost:8080/aut
 6. create a user named **demo** with password **demo** . Make sure to activate and impersonate this user.
 7. Under client, note the client secret and keep this handy. You will need this in the go code.
 
-**In the go code in demo.go replace the clientSecret value with the above obtained handy secret
-**
+**Whithin the go code in demo.go don't forget to replace the clientSecret value with the above obtained handy secret**
 
 ## Run and Test
 
 1. Navigate to this cloned repo and then run the code by executing `go run demo.go`. Make sure to execute `go mod tidy` just to be sure all dependencies are sorted. 
 
 
-Navitage to http://localhost:8181. The request should reach your go server, which tries to authenticate you. Since you did not send a token, the go server will redirecty you to keycloak to authenticate. You should see the login screen of keycloak. Login with the demo user you have created for this realm (demo/demo). If you have configured your keycloak correctly, it will authenticate you and redirect you to your go server callback.
+Navigate to http://localhost:8181. The request should reach your go server, which tries to authenticate you. Since you did not send a token, the go server will redirecty you to keycloak to authenticate. You should see the login screen of keycloak. Login with the demo user you have created for this realm (demo/demo). If you have configured your keycloak correctly, it will authenticate you and redirect you to your go server callback.
 
 Copy your access token and use curl to verify if the server is able to accept your token
 
