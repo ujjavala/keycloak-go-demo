@@ -20,7 +20,7 @@ func main() {
     }
 
     clientID := "demo-client"
-    clientSecret := "cbfd6e04-a51c-4982-a25b-7aaba4f30c81"
+    clientSecret := "fc4502aa-e216-4fa7-b21b-158d62561537"
 
     redirectURL := "http://localhost:8181/demo/callback"
     // Configure an OpenID Connect aware OAuth2 client.
@@ -59,7 +59,7 @@ func main() {
             return
         }
 
-        w.Write([]byte("hello world"))
+        w.Write([]byte("Yayy!!!Verified user id_token through keycloak"))
     })
 
     http.HandleFunc("/demo/callback", func(w http.ResponseWriter, r *http.Request) {
