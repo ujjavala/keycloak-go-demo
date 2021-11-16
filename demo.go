@@ -20,7 +20,7 @@ func main() {
     }
 
     clientID := "demo-client"
-    clientSecret := "fc4502aa-e216-4fa7-b21b-158d62561537"
+    clientSecret := "5aa9c9aa-1264-426c-b108-e9d645a0cd0c"
 
     redirectURL := "http://localhost:8181/demo/callback"
     // Configure an OpenID Connect aware OAuth2 client.
